@@ -25,7 +25,7 @@ jobs:
           go build -buildmode=c-shared -o libjson.so ./plugin
 
       - name: Upload plugin artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: libjson.so
           path: libjson.so
