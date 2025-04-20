@@ -1,0 +1,11 @@
+plugins:
+  - name: json
+    library_path: ./libjson.so
+    init_config: ""
+    open_params: ""
+
+load_plugins: [json]
+
+# 出力をターミナルに出す
+stdout_output:
+  enabled: true

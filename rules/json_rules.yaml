@@ -1,0 +1,6 @@
+- rule: Detect Hello Event
+  desc: Detects when json contains "hello" in the field /message
+  condition: json.value[/message] = "hello"
+  output: JSON said hello! value=%json.value[/message]
+  priority: INFO
+  source: cloudtrail  # or k8s_audit if you're using Kubernetes audit logs
